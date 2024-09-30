@@ -1,0 +1,82 @@
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  padding: 0 20px;
+  width: 100%;
+}
+.pet_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 180px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+.pet_name {
+  font-size: 24px;
+  font-size: 900;
+}
+.shortcut_to_mypet {
+  font-size: 12px;
+  cursor: pointer;
+}
+.search_bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.search_bar input {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  text-indent: 20px;
+  border: none;
+}
+.main_contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.tags {
+  display: flex;
+  margin: 12px 0;
+}
+
+.tags div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  font-size: 10px;
+  background: #07847fff;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.one_item {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.hospital_img {
+  width: 70px;
+  height: 70px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+}

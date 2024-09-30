@@ -2,9 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ol,
+ul,
+li,
+form,
+article,
+aside,
+footer,
+header,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  font-family: "GmarketSansMedium";
+  color: #333;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +56,54 @@
   }
 }
 
+html {
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  @media (min-width: 550px) {
+    font-size: 18px;
+  }
+  @media (max-width: 376px) {
+    font-size: 12px;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 1px solid red;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* 스크롤 숨기기 */
+html,
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
