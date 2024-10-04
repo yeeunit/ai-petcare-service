@@ -10,7 +10,7 @@ h1 {
   font-weight: 900;
   font-size: 28px;
   color: #07847fff;
-  color: #fff;
+  /* color: #fff; */
   font-family: "yg-jalnan";
 }
 
@@ -21,7 +21,7 @@ h1 {
   width: 100%;
   height: 66px;
   padding: 20px;
-  background-color: #07847fff;
+  /* background-color: #07847fff; */
 }
 
 .header_icon img {

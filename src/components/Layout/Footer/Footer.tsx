@@ -25,6 +25,12 @@ const Footer: React.FC = () => {
             다이어리
           </div>
         </Link>
+        <Link href="/market">
+          <div className="ft_icon">
+            <img src="/icons/cart.png" alt="mypage" />
+            펫마켓
+          </div>
+        </Link>
         <Link href="/mypage">
           <div className="ft_icon">
             <img src="/icons/info.png" alt="mypage" />
