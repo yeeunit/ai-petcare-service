@@ -1,36 +1,50 @@
 .main_wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 700px;
-  padding: 0 20px;
   width: 100%;
+  overflow-y: auto;
 }
 .pet_info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 180px;
-  border: 1px solid #ccc;
+  height: 200px;
+  /* border: 1px solid #ccc; */
   margin-bottom: 20px;
-  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
 }
-.pet_name {
-  font-size: 24px;
+
+.pet_info img {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.pet_info span {
+  display: block;
+  z-index: 999;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 26px;
   font-size: 900;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .shortcut_to_mypet {
+  position: absolute;
   font-size: 12px;
   cursor: pointer;
+  right: 20px;
+  bottom: 20px;
 }
 .search_bar {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 50px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 20px;
+  height: 44px;
+  padding: 0 20px;
 }
 
 .search_bar input {
@@ -38,16 +52,19 @@
   height: 100%;
   font-size: 14px;
   text-indent: 20px;
-  border: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 .main_contents {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid #ccc;
-  padding: 20px;
+  padding: 30px;
 }
 
+.main_content_title {
+  font-size: 20px;
+}
 .tags {
   display: flex;
   margin: 12px 0;
@@ -58,7 +75,7 @@
   align-items: center;
   justify-content: center;
   height: 30px;
-  font-size: 10px;
+  font-size: 11px;
   background: #07847fff;
   color: #fff;
   border-radius: 20px;
@@ -66,17 +83,71 @@
   margin-right: 10px;
 }
 
+.contents_wrap {
+  display: flex;
+  flex-direction: column;
+}
 .one_item {
   display: flex;
+  height: 100%;
   width: 100%;
   padding: 10px 0;
   border-bottom: 1px dotted #ccc;
 }
 
 .hospital_img {
-  width: 70px;
-  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
   background-color: #ccc;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 14px;
+}
+
+.hospital_img img {
+  display: flex;
+  object-fit: cover;
+}
+
+.column_wrap {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 90px);
+}
+.flex_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.telephone {
+  display: flex;
+  height: 20px;
+  color: #444;
+  font-size: 13px;
+  cursor: pointer;
+}
+.telephone img {
+  object-fit: cover;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.reservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 28px;
+  background: #eee;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.hospital_address {
+  font-size: 12px;
 }

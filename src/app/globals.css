@@ -83,7 +83,7 @@ body {
   justify-content: space-between;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 1px solid red;
+  border: 1px solid #ddd;
 }
 
 /* 스크롤 숨기기 */

@@ -15,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <div className="flex flex-col h-screen">
+          <Header />
+          <main className="flex-grow overflow-y-auto ">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
