@@ -1,0 +1,28 @@
+.check_health {
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+}
+
+.check_health > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.check_health_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #07847fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}

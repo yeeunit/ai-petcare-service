@@ -1,0 +1,93 @@
+.img_slider_wrap {
+  width: calc(100% - 40px);
+  height: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img_slider {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.img_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.img_slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img_slider_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: 800;
+  padding: 0 10px;
+}
+
+.dots_container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: tomato;
+}
+
+.check_health {
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+}
+
+.check_health > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.check_health_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #07847fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
